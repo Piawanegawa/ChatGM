@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "title": "Sample Adventure",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Chapter 1",
+      "scenes": [
+        {
+          "id": 1,
+          "title": "The Beginning",
+          "description": "You stand at the entrance of a dark cave."
+        }
+      ]
+    }
+  ]
+}
