@@ -1,0 +1,22 @@
+{
+  "scene_id": 1,
+  "narration": "Die Helden betreten eine dunkle Höhle.",
+  "options": [
+    {
+      "prompt": "Nach Fallen suchen",
+      "check": {
+        "skill": "perception",
+        "dc": 12,
+        "on_success": "Du findest eine Falle.",
+        "on_fail": "Du löst eine Falle aus."
+      }
+    }
+  ],
+  "combat_if_triggered": {
+    "monsters": ["Goblin"],
+    "tactics": "Hinterhalt aus dem Schatten",
+    "terrain": "Höhle",
+    "scaling": "medium"
+  },
+  "state_updates": []
+}

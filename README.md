@@ -33,6 +33,21 @@ Szene abrufen:
 curl http://localhost:8000/scene/1
 ```
 
+Szene komponieren (Mock-LLM):
+
+```bash
+curl -X POST http://localhost:8000/llm/compose_scene \
+  -H 'Content-Type: application/json' \
+  -d '{"scene_id": 1, "party": {"members": ["A"]}}'
+# {
+#   "scene_id": 1,
+#   "narration": "Die Helden betreten eine dunkle Höhle.",
+#   "options": [{"prompt": "Nach Fallen suchen", "check": {"skill": "perception", "dc": 12, "on_success": "Du findest eine Falle.", "on_fail": "Du löst eine Falle aus."}}],
+#   "combat_if_triggered": {"monsters": ["Goblin"], "tactics": "Hinterhalt aus dem Schatten", "terrain": "Höhle", "scaling": "medium"},
+#   "state_updates": []
+# }
+```
+
 State-Update:
 
 ```bash
