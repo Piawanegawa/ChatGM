@@ -1,0 +1,23 @@
+{
+  "goblin": {
+    "name": "Goblin",
+    "type": "humanoid (goblinoid)",
+    "ac": 15,
+    "hp": 7,
+    "cr": 0.25
+  },
+  "goblin_boss": {
+    "name": "Goblin Boss",
+    "type": "humanoid (goblinoid)",
+    "ac": 17,
+    "hp": 21,
+    "cr": 1
+  },
+  "orc": {
+    "name": "Orc",
+    "type": "humanoid (orc)",
+    "ac": 13,
+    "hp": 15,
+    "cr": 0.5
+  }
+}
